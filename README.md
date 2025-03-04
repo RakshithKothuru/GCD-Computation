@@ -17,15 +17,13 @@ It consists of:
 - Separate **Datapath and Controller** architecture.
 - Fully verified through simulation.
 
-- ## 📌 File Structure
+## 📌 File Structure  
 📂 GCD_Computation  
- ┣ 📜 datapath.v → Verilog code for the Datapath  
- ┣ 📜 controller.v → Verilog code for the Controller  
- ┣ 📜 MUX.v → Verilog code for 16-bit multiplexer 
- ┣ 📜 sub.v → Verilog code for 16-bit subraction
- ┣ 📜 comp.v → Verilog code for 16-bit comparator
- ┣ 📜 PIPO.v → Verilog code for 16-bit register
- ┣ 📜 test_tb.v → Testbench for verification  
- ┣ 📂 images → Contains block diagram and flowchart  
- ┗ 📜 README.md → Project documentation  
-
+ ┣ 📜 datapath.v  → Verilog code for the Datapath  
+ ┣ 📜 controller.v  → Verilog code for the Controller  
+ ┣ 📜 MUX.v  → Verilog code for 16-bit Multiplexer  
+ ┣ 📜 sub.v  → Verilog code for 16-bit Subtraction  
+ ┣ 📜 comp.v  → Verilog code for 16-bit Comparator  
+ ┣ 📜 PIPO.v  → Verilog code for 16-bit Register (Parallel-In Parallel-Out)  
+ ┣ 📜 test_tb.v  → Testbench for verification  
+ ┗ 📜 README.md  → Project documentation  
