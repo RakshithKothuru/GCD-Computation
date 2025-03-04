@@ -1,25 +1,31 @@
 # GCD Computation Using Datapath and Controller
 
-## 📌 Project Overview  
-This project implements a **16-bit GCD computation unit** using the **Euclidean Algorithm** in **Verilog HDL**. It consists of:  
-✅ **Datapath** – Performs the arithmetic operations and data movement.  
-✅ **Controller** – Generates control signals to manage the datapath operations.
+## 📌 Project Overview
+This project implements a **16-bit GCD Computation Unit** using the **Euclidean Algorithm** in **Verilog HDL**.  
+It consists of:
+- A **Datapath Unit** to perform computations.
+- A **Controller Unit** to manage the control signals.  
 
-The design is verified using **Icarus Verilog**, simulated in **GTKWave**, and coded in **VS Code**.
+## 📌 Technologies Used
+✅ Designed using **Verilog HDL**  
+✅ Simulated using **Icarus Verilog (iverilog) & GTKWave**  
+✅ Developed in **VS Code**  
 
----
+## 📌 Features
+- Uses **Euclidean Algorithm** for efficient GCD computation.
+- Implemented as a **16-bit digital circuit**.
+- Separate **Datapath and Controller** architecture.
+- Fully verified through simulation.
 
-## 🔧 **How It Works**  
-The **Euclidean Algorithm** computes the GCD of two numbers **A** and **B** using subtraction:  
-1. If `A == B`, GCD is `A`.  
-2. If `A > B`, subtract `B` from `A` (`A = A - B`).  
-3. If `B > A`, subtract `A` from `B` (`B = B - A`).  
-4. Repeat until `A == B`.  
+- ## 📌 File Structure
+📂 GCD_Computation  
+ ┣ 📜 datapath.v → Verilog code for the Datapath  
+ ┣ 📜 controller.v → Verilog code for the Controller  
+ ┣ 📜 MUX.v → Verilog code for 16-bit multiplexer 
+ ┣ 📜 sub.v → Verilog code for 16-bit subraction
+ ┣ 📜 comp.v → Verilog code for 16-bit comparator
+ ┣ 📜 PIPO.v → Verilog code for 16-bit register
+ ┣ 📜 test_tb.v → Testbench for verification  
+ ┣ 📂 images → Contains block diagram and flowchart  
+ ┗ 📜 README.md → Project documentation  
 
-This logic is implemented in **hardware** using a **datapath and controller** structure.  
-
----
-
-## 📜 **Project Structure**
-
-![GCD Datapath and Controller](GCD_datapath_controller.png)
