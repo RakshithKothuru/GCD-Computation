@@ -21,9 +21,9 @@ It consists of:
 📂 GCD_Computation  
  ┣ 📜 datapath.v  → Verilog code for the Datapath  
  ┣ 📜 controller.v  → Verilog code for the Controller  
- ┣ 📜 MUX.v  → Verilog code for 16-bit Multiplexer  
+ ┣ 📜 mux.v  → Verilog code for 16-bit Multiplexer  
  ┣ 📜 sub.v  → Verilog code for 16-bit Subtraction  
  ┣ 📜 comp.v  → Verilog code for 16-bit Comparator  
- ┣ 📜 PIPO.v  → Verilog code for 16-bit Register (Parallel-In Parallel-Out)  
+ ┣ 📜 pipo.v  → Verilog code for 16-bit Register (Parallel-In Parallel-Out)  
  ┣ 📜 test_tb.v  → Testbench for verification  
  ┗ 📜 README.md  → Project documentation  
