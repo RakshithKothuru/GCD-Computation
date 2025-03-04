@@ -3,7 +3,7 @@
 ## 📌 Project Overview  
 This project implements a **16-bit GCD computation unit** using the **Euclidean Algorithm** in **Verilog HDL**. It consists of:  
 ✅ **Datapath** – Performs the arithmetic operations and data movement.  
-✅ **Controller** – Generates control signals to manage the datapath operations.  
+✅ **Controller** – Generates control signals to manage the datapath operations.
 
 The design is verified using **Icarus Verilog**, simulated in **GTKWave**, and coded in **VS Code**.
 
