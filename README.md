@@ -22,4 +22,4 @@ This logic is implemented in **hardware** using a **datapath and controller** st
 
 ## 📜 **Project Structure**
 
-[GCD Block Diagram](https://github.com/RakshithKothuru/GCD-Computation/blob/main/Datapaths-of-GCD-processor.png?raw=true)
+![GCD Datapath and Controller](GCD_datapath_controller.png)
