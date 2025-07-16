@@ -1,10 +1,13 @@
 // DATAPATH MODULE
 
-module datapath(lt,gt,eq,sel1,sel2,sel_in,ldA,ldB,data_in,clk);
-  input sel1,sel2,sel_in,ldA,ldB,clk;
+// DATAPATH MODULE
+
+module datapath(lt,gt,eq,sel1,sel2,sel_in,ldA,ldB,data_in,clk,result,done);
+  input sel1,sel2,sel_in,ldA,ldB,clk,done;
   output lt,gt,eq;
   input [15:0] data_in;
   wire [15:0] aOut,bOut,x,y,subOut,bus;
+  output [15:0] result;
   
   pipo A(.data_out(aOut),.data_in(bus),.load(ldA),.clk(clk));
   pipo B(.data_out(bOut),.data_in(bus),.load(ldB),.clk(clk));
@@ -17,5 +20,7 @@ module datapath(lt,gt,eq,sel1,sel2,sel_in,ldA,ldB,data_in,clk);
   MUX load(.out(bus),.in1(subOut),.in0(data_in),.sel(sel_in));
   
   sub u2(.subOut(subOut),.in1(x),.in2(y));
+
+  assign result=done?aOut:0;
   
 endmodule
