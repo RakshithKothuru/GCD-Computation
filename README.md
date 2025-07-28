@@ -69,6 +69,5 @@ The design follows a **controller-datapath model**:
 
 ## 🔗 References
 
-- [Digital Design: Principles and Practices — John F. Wakerly](https://www.pearson.com/en-us/subject-catalog/p/digital-design-principles-and-practices/P200000000733)
 - Euclidean Algorithm: [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)
 
